@@ -99,9 +99,9 @@
 				</Offset>
 			</Anchor>
 		</Anchors>
-		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" tile="true"></Backdrop>
+		<Backdrop bgFile="Interface\AddOns\RaidSummon\img\empty.tga" tile="true"></Backdrop>
 		<Frames>
-			<Frame name="RaidSummon_TitleFrame" hidden="false">
+			<Frame name="RaidSummon_TitleFrame" hidden="true">
 				<Size>
 					<AbsDimension x="100" y="18"/>
 				</Size>
@@ -118,7 +118,7 @@
 						</FontString>
 					</Layer>
 				</Layers>
-				<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" tile="true"></Backdrop>
+				<Backdrop bgFile="Interface\AddOns\RaidSummon\img\empty.tga" tile="true"></Backdrop>
 				<Anchors>
 					<Anchor point="TOPLEFT">
 						<Offset>
@@ -128,7 +128,7 @@
 				</Anchors>
 
 				<Frames>
-					<Button name="RaidSummon_CloseButton" inherits="RaidSummon_TitleButton_Template">
+					<Button name="RaidSummon_CloseButton" inherits="RaidSummon_TitleButton_Template" hidden="true">
 						<Scripts>
 							<OnClick>
 								RaidSummon_RequestFrame:Hide()

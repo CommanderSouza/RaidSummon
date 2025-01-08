@@ -166,15 +166,15 @@ function RaidSummon_NameListButton_OnClick(button)
 						    	whisper_message = whisper_message .. subzone_message
 							end
 						end
-						if RaidSummonOptions.shards then
-					    	message = message .. shards_message
-						end
+						-- if RaidSummonOptions.shards then
+					    -- 	message = message .. shards_message
+						-- end
 						SendChatMessage(message, "RAID")
 
 						-- Send Whisper Message
-						if RaidSummonOptions.whisper then
-							SendChatMessage(whisper_message, "WHISPER", nil, name)
-						end
+						-- if RaidSummonOptions.whisper then
+						-- 	SendChatMessage(whisper_message, "WHISPER", nil, name)
+						-- end
 
 						-- Remove the summoned target
 						for i, v in ipairs (RaidSummonDB) do
